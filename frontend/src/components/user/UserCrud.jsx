@@ -107,7 +107,7 @@ export default class UserCrud extends Component {
 
     renderTable() {
         return (
-            <table className="table mt-4">
+            <table className="table table-hover mt-4">
                 <thead>
                     <tr>
                         <th>ID</th>
@@ -130,7 +130,7 @@ export default class UserCrud extends Component {
                     <td>{user.id}</td>
                     <td>{user.name}</td>
                     <td>{user.email}</td>
-                    <td>
+                    <td className="btn-group btn-group-sm">
                         <button className="btn btn-warning" onClick={() => this.load(user)}>
                             <i className="fa fa-pencil"></i>
                         </button>
